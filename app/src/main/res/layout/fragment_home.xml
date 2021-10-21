@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen_bg"
+    tools:context=".app.features.homeFragment.HomeFragment">
+    <TextView
+        android:layout_width="233dp"
+        android:layout_height="82dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36dp"
+        android:text="Find Your Favorite Food"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/benton_sans_bold"
+        android:lineSpacingExtra="9sp"
+        android:translationY="-4.65sp"
+        android:gravity="top"
+
+        >
+
+    </TextView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/notificationsButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="315dp"
+        android:layout_marginTop="47dp"
+        android:background="@drawable/input_bg"
+        android:drawableStart="@drawable/belt_icon"
+        android:elevation="10dp"
+        android:padding="12dp">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/userNameInput"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/search_bg"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:drawablePadding="20dp"
+        android:elevation="20dp"
+        android:gravity="fill"
+        android:hint="Search"
+        android:paddingLeft="10dp" />
+    <RelativeLayout
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="235dp"
+        android:layout_width="340dp"
+        android:layout_height="125dp"
+        android:background="@drawable/green_bg"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icecream">
+
+        </ImageView>
+        <TextView
+            android:layout_width="142dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="175dp"
+            android:text="Special Deal For October"
+            android:fontFamily="@font/benton_sans_bold"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+
+            >
+        </TextView>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buyIceCream"
+            android:layout_width="82dp"
+            android:layout_height="32dp"
+            android:background="@drawable/input_bg"
+            android:textColor="@color/onSelectedTab"
+            android:text="Buy Now"
+            android:textSize="10dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="195dp"
+            >
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

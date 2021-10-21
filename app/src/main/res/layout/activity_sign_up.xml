@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen_bg"
+    tools:context=".app.features.signIn.SignInActivity">
+    <ImageView
+        android:layout_width="188dp"
+        android:layout_height="203dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="105dp"
+        android:layout_alignParentTop="true"
+
+        android:src="@drawable/logo"
+        android:layout_marginTop="30dp">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="217dp"
+        android:layout_height="26dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="286dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="6sp"
+        android:text="Sign Up for free"
+        android:textAppearance="@style/Titles"
+        android:translationY="-3sp">
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/userNameInput"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="352dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/profile"
+        android:drawablePadding="20dp"
+        android:elevation="20dp"
+        android:gravity="fill"
+        android:hint="Username"
+        android:paddingLeft="10dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/emailInput"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="421dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/message"
+        android:drawablePadding="20dp"
+        android:elevation="20dp"
+        android:gravity="fill"
+        android:hint="Email"
+        android:paddingLeft="10dp"
+        >
+
+    </com.google.android.material.textfield.TextInputEditText>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/passwordInput"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="490dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="20dp"
+        android:elevation="20dp"
+        android:gravity="fill"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:paddingLeft="10dp"
+        app:endIconMode="password_toggle">
+
+    </com.google.android.material.textfield.TextInputEditText>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signUpButton"
+        android:layout_width="140dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="625dp"
+        android:background="@drawable/green_bg"
+        android:fontFamily="@font/benton_sans_bold"
+        android:text="Sign Up">
+
+    </androidx.appcompat.widget.AppCompatButton>
+    <ProgressBar
+        android:id="@+id/registerProgress"
+        android:visibility="invisible"
+        android:layout_width="40dp"
+        android:layout_marginLeft="185dp"
+        android:layout_marginTop="570dp"
+        android:layout_height="40dp">
+
+    </ProgressBar>
+
+</RelativeLayout>

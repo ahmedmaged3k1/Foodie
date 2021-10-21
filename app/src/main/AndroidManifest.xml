@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.foodie">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Foodie">
+
+        <activity
+            android:name=".app.features.signUp.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".app.features.signIn.SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".app.features.onBoard.OnBoardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".app.features.home.HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".app.core.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+    </application>
+
+</manifest>
